@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Welcome to Placement Portal</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="Images/sign_in.jpg" alt="Background image" id="bg-image" />
+    <div id="main-card">
+      <div class="tabs">
+        <button class="tab-switch" onclick="showPanel(0)">Student</button>
+        <button class="tab-switch" onclick="showPanel(1)">CIR Faculty</button>
+      </div>
+
+      <div class="tab-content">
+        <div class="tab-panels">
+          <h1>Sign In</h1>
+
+          <div id="email-input">
+            <input
+              type="text"
+              name="mail-id"
+              id="email-id"
+              placeholder="Student Email ID"
+            />
+            <img src="Icons/perm_identity_black_24dp.svg" alt="Person icon" />
+          </div>
+          <div id="password-input">
+            <input
+              type="text"
+              name="password"
+              id="pwd"
+              placeholder="Password"
+            />
+            <img src="Icons/lock_black_24dp.svg" alt="Lock icon" />
+          </div>
+          <a href="#">Forgot Passord?</a>
+          <button id="submitBtn">Let's go</button>
+        </div>
+
+        <div class="tab-panels">
+          <h1>Sign In</h1>
+
+          <div id="email-input">
+            <input
+              type="text"
+              name="mail-id"
+              id="email-id"
+              placeholder="CIR Faculty Email ID"
+            />
+            <img src="Icons/perm_identity_black_24dp.svg" alt="Person icon" />
+          </div>
+          <div id="password-input">
+            <input
+              type="text"
+              name="password"
+              id="pwd"
+              placeholder="Password"
+            />
+            <img src="Icons/lock_black_24dp.svg" alt="Lock icon" />
+          </div>
+          <a href="#">Forgot Passord?</a>
+          <button id="submitBtn">Let's go</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/javascript/script.js"></script>
+  </body>
+</html>
