@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Placement Portal</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <style>
+            #left-nav{
+                height:100vh;
+                position: fixed;
+                background-color: #363740;
+            }
+
+            #details-section{
+                position: relative;
+                
+            }
+
+            body{
+                background-color:#f0f0f0 ;
+                
+            }
+
+            input[type = "file"]{
+            display: none;
+            }
+
+            #labelForFile{
+            color:#ffffff;
+            background-color:#363740 ;
+            width:200px;
+            padding: 10px 0px 10px 0px;
+            
+            position: relative;
+            left: 10px;
+            top: 10px;
+            display:flex;
+            justify-content: center;
+            cursor: pointer;
+            }
+
+            .leftNavItem{
+                background-color: #363740 ;
+                height:53px;
+                width:109%;
+                position: relative;
+                left:-11px;
+                text-align: center;
+                display: flex;
+                justify-content: center; 
+                align-items: center;
+            }
+
+            .leftNavItem:hover{
+                background-color:rgb(94, 95, 104)
+            }
+
+
+            .active{
+                background-color:rgb(94, 95, 104) ;
+                border-left: 2px solid white;
+            }
+
+            .side-links{
+                
+                color:white;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class = "parent">
+            <div class = "row"  >
+                <div class = "col l2  " id="left-nav" >
+                    <div class = "leftNavItem "><a class = "side-links" href="#">Home</a></div>
+                    <div class = "leftNavItem"><a class = "side-links" href="#">About</a></div> 
+                    <div class = "leftNavItem"><a class = "side-links" href="#">Placement</a></div>
+                    <div class = "active leftNavItem"><a class = "side-links" href="#">Apply</a></div>    
+                </div>
+                <div class="col l9 push-l2" id = "details-section" style = "margin: 20px 20px 20px 30px;">
+                    <div class = "row" >
+                        <div class="col l9" style="margin: 0px 0px 0px 40px;">
+                            <span style = "font-size: 28px; font-weight: bold;">Cisco</span>
+                        </div>
+                        <div class="col l2 row" style = "margin-top: 10px;">
+                            <div class = "col l1 push-l2">
+                                <i class="fas fa-bell" style = "margin-right: 20px; color: gray;font-size: 20px;"></i>
+                                
+                            </div>
+                            <div class = "col l1 push-l3">
+                                <i class="fas fa-home" style = "margin-right: 20px; color: gray;font-size: 20px;"></i>
+                                
+                            </div>
+                            <div class="col l4 push-l2 inline" style="position: relative;top:-8px;left:65px" >
+                                <span><img style = " border-radius:20px;height:40px; width:40px"src="https://lorempixel.com/250/250/nature/3"></span>
+                                
+                                
+                            </div>
+                            <div class = "col l2 push-l4 " >
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="row card z-depth-3 " style  = "margin: 0px 30px 30px 40px; position: relative; top:-20px">
+                        <div class="row" style = "margin:0px 10px 0px 10px">
+                            <div style=" padding: 20px 0px 10px 10px;border-bottom: 2px solid gray;">
+                                Personal Details
+                            </div>
+                            <div class = "row" style = "padding: 10px 0px 0px 10px">
+                                <div class="col l4 s12">
+                                    Full Name:
+                                    <div class="input-field inline">
+                                      <input id="email_inline" type="email" class="validate">
+                                    </div>
+                                </div>
+                                <div class="col l4 s12">
+                                    Email Id:
+                                    <div class="input-field inline">
+                                      <input id="email_inline" type="email" class="validate">
+                                    </div>
+                                </div>
+                                <div class="col l4 s12">
+                                    Mobile No:
+                                    <div class="input-field inline">
+                                      <input id="email_inline" type="email" class="validate">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style = "margin:0px 10px 0px 10px">
+                            <div style=" padding: 20px 0px 10px 10px;border-bottom: 2px solid gray;">
+                                Course Details
+                            </div>
+                            <div class = "row" style = "padding: 10px 0px 0px 10px">
+                                <div class = "col l4 s12">
+                                    Course:
+                                        <div class="input-field inline">
+                                            <select >
+                                            <option value="0" disabled selected></option>
+                                            <option value="1">B.Tech</option>
+                                            <option value="2">M.Tech</option>
+                                            <option value="3">MCA</option>
+                                            </select>
+                                        </div>
+                                </div>
+                                <div class = "col l4 s12">
+                                    Branch:
+                                        <div class="input-field inline">
+                                            <select>
+                                            <option value="0" disabled selected></option>
+                                            <option value="1">CSE</option>
+                                            <option value="2">ECE</option>
+                                            <option value="3">EEE</option>
+                                            </select>
+                                        </div>
+                                </div>
+                                <div class="col l4 s12">
+                                    College roll no:
+                                    <div class="input-field inline">
+                                      <input id="email_inline" type="email" class="validate">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style = "margin:0px 10px 0px 10px">
+                            <div style=" padding: 20px 0px 10px 10px;border-bottom: 2px solid gray;">
+                                Academic Scores
+                            </div>
+                            <div class = "row" style = "padding: 10px 0px 0px 10px">
+                                <div class="col l4 s12">
+                                    CGPA:
+                                    <div class="input-field inline">
+                                      <input id="email_inline" type="email" class="validate">
+                                    </div>
+                                </div>
+                                <div class="col l4 s12">
+                                    10% :
+                                    <div class="input-field inline">
+                                      <input id="email_inline" type="email" class="validate">
+                                    </div>
+                                </div>
+                                <div class="col l4 s12">
+                                    12% :
+                                    <div class="input-field inline">
+                                      <input id="email_inline" type="email" class="validate">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="row" style = "margin:0px 10px 0px 10px">
+                            <div style=" padding: 20px 0px 10px 10px;border-bottom: 2px solid gray;">
+                                Company
+                            </div>
+                            <div class = "row" style = "padding: 10px 0px 0px 10px">
+                                <div class="col l12 s12">
+                                    <div class="input-field ">
+                                      <input id="email_inline" type="email" class="validate" placeholder="Please write a few lines about the company">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="row" style = "margin:0px 10px 0px 10px">
+                            <div style=" padding: 20px 0px 10px 10px;border-bottom: 2px solid gray;">
+                                Resume
+                            </div>
+                            <div class = "row" style = "padding: 10px 0px 0px 10px">
+                                <div class="col l6 s12">
+                                    Resume Link :
+                                    <div class="input-field inline">
+                                      <input id="email_inline" type="email" class="validate">
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="row" style = "margin:0px 10px 0px 10px">
+                            <div class="right" style="margin:0px 20px 20px 0px;">
+                                <span>
+                                    <button class="btn waves-effect waves-light" style = "background-color: #363740;" type="submit" name="action">
+                                        Apply
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            $('select').formSelect();
+            });
+
+            $(document).ready(function(){
+            $('.datepicker').datepicker();
+            });
+
+            $(document).ready(function(){
+            $('.timepicker').timepicker();
+            });
+        </script>
+
+    </body>
+</html>
