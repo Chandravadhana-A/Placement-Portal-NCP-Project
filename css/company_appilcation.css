@@ -1,0 +1,60 @@
+#left-nav{
+    height:100vh;
+    position: fixed;
+    background-color: #363740;
+}
+
+
+#details-section{
+    position: relative;
+    
+}
+
+body{
+    background-color:#f0f0f0 ;
+    
+}
+
+input[type = "file"]{
+    display: none;
+}
+
+#labelForFile{
+    color:#ffffff;
+    background-color:#363740 ;
+    width:200px;
+    padding: 10px 0px 10px 0px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    display:flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.leftNavItem{
+    background-color: #363740 ;
+    height:53px;
+    width:109.5%;
+    position: relative;
+    left:-11px;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.leftNavItem:hover{
+    background-color:rgb(94, 95, 104)
+}
+
+
+.active{
+    background-color:rgb(94, 95, 104) ;
+    border-left: 2px solid white;
+}
+
+.side-links{
+    
+    color:white;
+}
