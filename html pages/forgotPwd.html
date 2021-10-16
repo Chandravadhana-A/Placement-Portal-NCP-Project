@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html>
-<title>Forgot password</title>
-<body>
-<div class = "gfg">
-<h1>Forgot password
-<link rel="stylesheet" href="style forgot password.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="js forgot password.js"></script>
-</h1> 
-  <div class="tab">
-<span id="error1"></span>
-<div class="input-container">
-	<i class="fa fa-user icon"></i>
-    <input class="input-field" type="text" id="usrnm" placeholder="Username">
-  </div>
-<span id="error"></span>		
-<div class="input-container">
-	<i class="fa fa-envelope icon"></i>
-    <input class="input-field" type="text" id="email" placeholder="Mail id">
-  </div>
-	
-  </div>
-  <div style="overflow:auto;">
-  <div style="float:right;">
-    <button type="submit" onclick="errorMessage()">Send mail</button>
-  </div>
-  </div>
-<p id="error3"></p>
-</div>
-</body>
+  <title>Forgot password</title>
+  <body>
+    <div class="gfg">
+      <h1>
+        Forgot password
+        <link rel="stylesheet" href="../css/forgotPwd.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <script src="../javascript/forgotPwd.js"></script>
+      </h1>
+      <div class="tab">
+        <span id="error1"></span>
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input
+            class="input-field"
+            type="text"
+            id="usrnm"
+            placeholder="Username"
+          />
+        </div>
+        <span id="error"></span>
+        <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input
+            class="input-field"
+            type="text"
+            id="email"
+            placeholder="Mail id"
+          />
+        </div>
+      </div>
+      <div style="overflow: auto">
+        <div style="float: right">
+          <button type="submit" onclick="errorMessage()">Send mail</button>
+        </div>
+      </div>
+      <p id="error3"></p>
+    </div>
+  </body>
 </html>

@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html>
-<title>Reset password</title>
-<body>
-<div class = "gfg">
-<h1>Reset password
-<link rel="stylesheet" href="style reset password.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="js reset password.js"></script>
-</h1>
-  <div class="tab">
-<span id="error3"></span>
-<span id="error"></span>
-<div class="input-container">
-    <input class="input-field" type="password" id="pass" placeholder="New password">
-	<i onclick="myFunction(this)" class="fa fa-eye icon"></i>
-  </div>	
-<span id="error1"></span>
-<div class="input-container">
-    <input class="input-field" type="password" id="cpass" placeholder="confirm new password">
-	<i onclick="myFunction1(this)" class="fa fa-eye icon"></i>
-  </div>
-  </div>
-  <div style="overflow:auto;">
-  <div style="float:right;">
-    <button type="submit" id="nextBtn" onclick="errorMessage()">Reset</button>
-  </div>
-  </div>
-<p id="error2"></p>
-</div>
-</body>
+  <title>Reset password</title>
+  <body>
+    <div class="gfg">
+      <h1>
+        Reset password
+        <link rel="stylesheet" href="../css/resetPwd.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <script src="../javascript/resetPwd.js"></script>
+      </h1>
+      <div class="tab">
+        <span id="error3"></span>
+        <span id="error"></span>
+        <div class="input-container">
+          <input
+            class="input-field"
+            type="password"
+            id="pass"
+            placeholder="New password"
+          />
+          <i onclick="myFunction(this)" class="fa fa-eye icon"></i>
+        </div>
+        <span id="error1"></span>
+        <div class="input-container">
+          <input
+            class="input-field"
+            type="password"
+            id="cpass"
+            placeholder="confirm new password"
+          />
+          <i onclick="myFunction1(this)" class="fa fa-eye icon"></i>
+        </div>
+      </div>
+      <div style="overflow: auto">
+        <div style="float: right">
+          <button type="submit" id="nextBtn" onclick="errorMessage()">
+            Reset
+          </button>
+        </div>
+      </div>
+      <p id="error2"></p>
+    </div>
+  </body>
 </html>
