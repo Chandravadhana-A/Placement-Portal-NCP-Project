@@ -1,0 +1,81 @@
+body {
+  background-color: #ffffff;
+  background-image: url("lock.jpg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1{
+	color: #363740;
+	font-family: "Arsenal",monospace;
+}
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  border-radius: 0px 15px 15px 0px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: #C2C2C2;
+}
+.gfg {
+		background-color: #ffffff;
+		margin-top:10%;
+                margin-left:10%;
+                width:300px;
+                height:300px;
+                text-align:center;
+		padding:50px;
+		border-radius: 15px;
+}
+button {
+        display: inline-block;
+        background-color: #363740;
+        border-radius: 10px;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 17px;
+	padding:10px;
+        width: 100px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor: pointer;
+      }
+.p{
+	color: #363740;
+	font-family: "Arsenal",monospace;
+}
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.icon {
+  padding: 10px;
+  color: black;
+  min-width: 20px;
+  text-align: center;
+  background-color: #C2C2C2;
+  border-radius: 15px 0px 0px 15px;
+}
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+span{
+font-family: "Arsenal",monospace;
+font-weight: bolder;
+font-size: 13px;
+width: 300px;
+padding: 10px;
+}
+p{
+font-family: "Arsenal",monospace;
+font-weight: bolder;
+font-size: 16px;
+width: 100%;
+padding: 10px;
+}
